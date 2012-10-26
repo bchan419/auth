@@ -1,5 +1,9 @@
 <h1>Login form</h1>
 
+<% if flash[:alert] %>
+  <p><%= flash[:alert] %></p>
+<% end %>
+
 <%= form_tag sessions_path do %>
   <div class="field">
     <%= label_tag :email %>
